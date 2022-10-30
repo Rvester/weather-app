@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 export default function Forecastcard({id, avghumidity, date, sunrise, avgtemp_f}) {
   return (
-    <div className="text-center">
+    <div className="weather-card">
     <p className="text-info">Forecast Card #{id}</p>
     <br />
 
