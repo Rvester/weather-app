@@ -6,8 +6,9 @@ const url = `http://api.weatherapi.com/v1/forecast.json?q=07104&days=14&key=${ap
 
 export default function Forecast(props) {
     const [data, setData] = useState({
+		day: '', 
     	avghumidity: '',
-    	date: '',
+		date: '',
     	sunrise: '',
     	avgtemp_f: '',
     })
@@ -28,10 +29,10 @@ export default function Forecast(props) {
 		for (let i = 0; i < 14; i++){
 		    getDays.push({
 			    index: i,
-			    avghumidity: response.forecast.forecastday[i].day.avghumidity,
+			    avgtemp_f: response.forecast.forecastday[i].day.avgtemp_f,
 			    date: response.forecast.forecastday[i].date,
 			    sunrise: response.forecast.forecastday[i].astro.sunrise,
-			    avgtemp_f: response.forecast.forecastday[i].day.avgtemp_f
+			    avghumidity: response.forecast.forecastday[i].day.avghumidity,
 		    })
 		}
     	    }
@@ -50,7 +51,7 @@ export default function Forecast(props) {
     <Forecastcard 
     key={day.index}
     id={day.index+1}
-    avghumidity={day.avghumidity} 
+	 avghumidity={day.avghumidity} 
     date={day.date} 
     sunrise={day.sunrise} 
     avgtemp_f={day.avgtemp_f} />

@@ -4,12 +4,13 @@ export default function Astronomycard({sunrise, sunset, moonrise, moonset, moon_
   return (
    
            <div className="astro-center">
-    <p className="astro-info">Astronomy Card</p>
+    <p className="astro-info">Astronomy of the Day</p>
     <br />
 
     <p className="astro">Sunrise: {sunrise}</p>
     <p className="astro">Sunset: {sunset}</p>
     <p className="astro">Moonrise: {moonrise}</p>
+    <p className="astro">Moonset: {moonset}</p>
     <p className="astro">Moon Phase: {moon_phase}</p>
     <p className="astro">Moon Illumination: {moon_illumination}</p>
     <br />
