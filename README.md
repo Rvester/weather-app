@@ -1,70 +1,34 @@
-# Getting Started with Create React App
+# Simplistic Weather UI
+![image](https://user-images.githubusercontent.com/106111818/198913302-f12e6285-3140-4f0b-bdef-502a49279deb.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+This is a simplistic Weather app, this was a good stepping stone into react for me where I also learned how to incorporate a CSS Framework
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In this Project I also added an astronomy card that shows the astronomy for the day and a Timezone where you can search places also
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### The Search function(the hardest part about this project)
 
-### `npm test`
+The Search function for this API  query can be searched by using 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Latitude and Longitude (Decimal degree) e.g: q=48.8567,2.3508
 
-### `npm run build`
+- city name e.g.: q=Paris
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- US zip e.g.: q=10001
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- UK postcode e.g: q=SW1
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Canada postal code e.g: q=G2J
 
-### `npm run eject`
+- metar:<metar code> e.g: q=metar:EGLL
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- iata:<3 digit airport code> e.g: q=iata:DXB
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- auto:ip IP lookup e.g: q=auto:ip
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- IP address (IPv4 and IPv6 supported) e.g: q=100.0.0.1
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Weather APi
+  https://www.weatherapi.com
