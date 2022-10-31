@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Forecastcard from "../components/Forecastcard";
 import Search from "../components/Search";
-import { Grid } from "@mui/material";
+import { Grid, responsiveFontSizes } from "@mui/material";
 import Container from "@mui/material/Container";
 
 const apiKey = process.env.REACT_APP_API_KEY;
 
 export default function Forecast(props) {
-  const [query, setQuery] = useState("Paris");
+  const [query, setQuery] = useState("07104");
   const [data, setData] = useState({
     day: "",
     avghumidity: "",
@@ -34,6 +34,7 @@ export default function Forecast(props) {
             date: response.forecast.forecastday[i].date,
             sunrise: response.forecast.forecastday[i].astro.sunrise,
             text: response.forecast.forecastday[i].day.condition.text,
+            image: response.forecast.forecastday[i].day.condition.icon,
             avghumidity: response.forecast.forecastday[i].day.avghumidity,
           });
         }
@@ -64,6 +65,7 @@ export default function Forecast(props) {
                 mintemp_f={day.mintemp_f}
                 date={day.date}
                 text={day.text}
+                image={day.icon}
                 avgtemp_f={day.avgtemp_f}
               />
             </Grid>

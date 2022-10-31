@@ -1,6 +1,8 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Astronomycard from "../components/Astronomycard";
+import { Grid, responsiveFontSizes } from "@mui/material";
+import Container from "@mui/material/Container";
 
 export default function Astronomy() {
   const apiKey = process.env.REACT_APP_API_KEY;
@@ -44,15 +46,23 @@ export default function Astronomy() {
   console.log(data);
 
   return (
-    <div className="superAstro">
-      <Astronomycard
-        sunrise={astro.sunrise}
-        sunset={astro.sunset}
-        moonrise={astro.moonrise}
-        moonset={astro.moonset}
-        moon_phase={astro.moon_phase}
-        moon_illumination={astro.moon_illumination}
-      />
-    </div>
+    <Container maxWidth="xl" className="astro-container">
+      <Grid
+        container
+        spacing={0}
+        direction="column"
+        alignItems="center"
+        justifyContent="center"
+      >
+        <Astronomycard
+          sunrise={astro.sunrise}
+          sunset={astro.sunset}
+          moonrise={astro.moonrise}
+          moonset={astro.moonset}
+          moon_phase={astro.moon_phase}
+          moon_illumination={astro.moon_illumination}
+        />
+      </Grid>
+    </Container>
   );
 }

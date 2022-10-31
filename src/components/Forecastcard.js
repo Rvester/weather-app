@@ -11,9 +11,10 @@ export default function Forecastcard({
   avgtemp_f,
   maxtemp_f,
   mintemp_f,
+  icon,
 }) {
   return (
-    <Card sx={{ minWidth: 100 }}>
+    <Card sx={{ minWidth: 250 }}>
       <CardContent>
         <p className="text-info"></p>
         <br />
@@ -21,6 +22,7 @@ export default function Forecastcard({
           <Typography variant="h5" component="div">
             <p> {text}</p>
           </Typography>
+          <p>{icon}</p>
           <p>Date: {date}</p>
           Max Temperature (F): {maxtemp_f}
           <p>Temperature (F): {avgtemp_f}</p>
