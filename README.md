@@ -47,3 +47,8 @@ Added a search function to Timezone where timezone changes when you search for a
 - React Router
 - Material UI 
 - Weather API
+  
+  ### Things to Add
+  Using IP Geolocation to get weather information for User
+  Natural Disaster Tracker 
+  Interactive Map
