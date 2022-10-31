@@ -8,9 +8,9 @@ This is a simplistic Weather app, this was a good stepping stone into react for 
 
 In this Project I also added an astronomy card that shows the astronomy for the day and a Timezone where you can search places also
 
-### The Search function
+### The Search function(the hardest part about this project)
 
-- The Search function for this API  query can be searched by using 
+The Search function for this API  query can be searched by using 
 
 - Latitude and Longitude (Decimal degree) e.g: q=48.8567,2.3508
 
