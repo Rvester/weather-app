@@ -65,7 +65,7 @@ export default function Forecast(props) {
                 mintemp_f={day.mintemp_f}
                 date={day.date}
                 text={day.text}
-                image={day.icon}
+                image={day.image}
                 avgtemp_f={day.avgtemp_f}
               />
             </Grid>
