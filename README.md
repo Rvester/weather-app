@@ -32,3 +32,12 @@ The Search function for this API  query can be searched by using
 
 ### Weather APi
   https://www.weatherapi.com
+  
+  
+  
+### Astronomy 
+Weather Api offers a basic astronomy that refreshes every day
+
+
+### Timezone
+Added a search function to Timezone where timezone changes when you search for a certain place
