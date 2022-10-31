@@ -49,6 +49,6 @@ Added a search function to Timezone where timezone changes when you search for a
 - Weather API
   
   ### Things to Add
-  Using IP Geolocation to get weather information for User
-  Natural Disaster Tracker 
-  Interactive Map
+  - Using IP Geolocation to get weather information for User
+  - Natural Disaster Tracker 
+  - Interactive Map
