@@ -41,3 +41,9 @@ Weather Api offers a basic astronomy that refreshes every day
 
 ### Timezone
 Added a search function to Timezone where timezone changes when you search for a certain place
+
+### Uses
+- React
+- React Router
+- Material UI 
+- Weather API
